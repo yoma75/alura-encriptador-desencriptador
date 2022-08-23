@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador - Desencriptador</title>
+  <link rel="shortcut icon" href="./assets/img/iconoPestana.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="imagen">
+      <img src="./assets/img/LogoCopia.png" alt="logo Alura">
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="cajaPadreSections">
+      
+      <section class="section1">
+        <textarea class="mensajeUsuario" id="mensajeUsuario" cols="65" rows="10" placeholder="Escribe tu mensaje aquí:"></textarea>
+        <h4 class="rodapie">&#128150; Web Developer: FREDY COLORADO, 23/08/2022</h4>
+        <div class="cajaPadreBotones">
+          <button type="button" class="btn btnEncriptarMensaje" id="btnEncriptarMensaje">Encriptar</button>
+          <button type="button" class="btn btnDesencriptarMensaje" id="btnDesencriptarMensaje">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="section2">
+        <div class="cajaContenido">
+          <div class="imagenMuneco">
+            <img src="./assets/img/munecoCopia.png" alt="muñeco con lupa">
+          </div>
+          <p class="txt1Muneco">Selecciona el texto, cópialo y pégalo para desencriptar</p>
+          <textarea class="mensajeUsuario" name="" id="resultadoMensajeUsuario" cols="20" rows="5" placeholder="Escribe aquí:"></textarea>
+          <button type="button" class="btn" id="btnCopiarTexto">Copiar texto</button>
+        </div>
+      </section>
+    </div>       
+  </main>
+
+  <script src="./assets/js/main.js"></script>
+  
+</body>
+</html>
