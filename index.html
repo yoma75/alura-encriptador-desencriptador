@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encriptador - Desencriptador</title>
   <link rel="shortcut icon" href="./assets/img/iconoPestana.png" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/estilos.css">
 </head>
 <body>
 
   <header class="header">
-    <div class="imagen">
-      <img src="./assets/img/LogoCopia.png" alt="logo Alura">
-    </div>
+    <h1><img src="./assets/img/LogoCopia.png" alt=""></h1>
   </header>
 
   <main class="main">
-    <div class="cajaPadreSections">
+    <div class="box-container">
       
-      <section class="section1">
-        <textarea class="mensajeUsuario" id="mensajeUsuario" cols="65" rows="10" placeholder="Escribe tu mensaje aquí:"></textarea>
-        <h4 class="rodapie">&#128150; Web Developer: FREDY COLORADO, 23/08/2022</h4>
-        <div class="cajaPadreBotones">
-          <button type="button" class="btn btnEncriptarMensaje" id="btnEncriptarMensaje">Encriptar</button>
-          <button type="button" class="btn btnDesencriptarMensaje" id="btnDesencriptarMensaje">Desencriptar</button>
+      <section class="seccion1">
+        <textarea class="textarea1" placeholder="Escriba el texto aquí:" id="mensajeUsuario" cols="" rows="" id="mensajeUsuario"></textarea>
+        <p>&#128150; Web Developer: FREDY COLORADO, 23/08/22</p>
+        <div class="botones">
+          <button type="button" class="btn btnEncriptar" id="btnEncriptarMensaje">Encriptar</button>
+          <button type="button" class="btn btnDesencriptar" id="btnDesencriptarMensaje">Desencriptar</button>
         </div>
       </section>
-
-      <section class="section2">
-        <div class="cajaContenido">
-          <div class="imagenMuneco">
-            <img src="./assets/img/munecoCopia.png" alt="muñeco con lupa">
-          </div>
-          <p class="txt1Muneco">Selecciona el texto, cópialo y pégalo para desencriptar</p>
-          <textarea class="mensajeUsuario" name="" id="resultadoMensajeUsuario" cols="20" rows="5" placeholder="Escribe aquí:"></textarea>
-          <button type="button" class="btn" id="btnCopiarTexto">Copiar texto</button>
-        </div>
+      
+      <section class="seccion2">
+        <img src="./assets/img/munecoCopia.png" alt="" class="img">
+        <h2>Selecciona el texto, cópialo y pégalo para desencriptar</h2>
+        <textarea class="textarea2" id="resultadoMensajeUsuario" cols="45" rows="6"></textarea> 
+        <div class="botones">
+          <button type="button" class="btn btnCopiar" id="btnCopiarTexto">Copiar</button>
+        </div>       
       </section>
-    </div>       
+    </div>
   </main>
 
   <script src="./assets/js/main.js"></script>
